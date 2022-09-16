@@ -184,7 +184,7 @@ crime_data %>%
 + filter(reported_crime == "...") %>%  #replace "..." with any of the 31 reported crimes.
 + count(time_of_day)
 
-#-------------VISUALIZED DATA - CRIME PER YEAR & TIME OF DAY-------------
+#-----------------------------------VISUALIZED DATA - CRIME PER YEAR & TIME OF DAY-----------------------------------
 ggplot(data = crime_data, #select dataframe
        mapping = aes(x = year, color = time_of_day))+ #select x and y axes, add color for time of days
        geom_line(stat = "count", size = 1.05)+ #count crimes per year, change line size
