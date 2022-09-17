@@ -61,53 +61,30 @@ crime_data <- crime_data %>% mutate(season = case_when
                                      
 #create new column for time of day: Morning, Night, Afternoon, Evening
 crime_data <- crime_data %>% mutate(time_of_day = case_when(
-              hour == "0" ~ "Night",
-                                                           
-              hour == "1" ~ "Night",
-                                                          
-              hour == "2" ~ "Night",
-                                                           
-              hour == "3" ~ "Night",
-                                                           
-              hour == "4" ~ "Night",
-                                                           
-              hour == "5" ~ "Night",
-                                                           
-              hour == "6" ~ "Morning",
-                                                           
-              hour == "7" ~ "Morning",
-                                                           
-              hour == "8" ~ "Morning",
-                                                           
-              hour == "9" ~ "Morning",
-                                                           
-              hour == "10" ~ "Morning",
-                                                           
-              hour == "11" ~ "Morning",
-                                                           
-              hour == "12" ~ "Afternoon",
-                                                           
-              hour == "13" ~ "Afternoon",
-                                                           
-              hour == "14" ~ "Afternoon",
-                                                           
-              hour == "15" ~ "Afternoon",
-                                                           
-              hour == "16" ~ "Afternoon",
-                                                           
-              hour == "17" ~ "Afternoon",
-                                                           
-              hour == "18" ~ "Evening",
-                                                           
-              hour == "19" ~ "Evening",
-                                                           
-              hour == "20" ~ "Evening",
-                                                           
-              hour == "21" ~ "Evening",
-                                                           
-              hour == "22" ~ "Evening",
-                                                           
-              hour == "23" ~ "Evening"))
+                                                             hour == "0" ~ "Night",                                             
+                                                             hour == "1" ~ "Night",                      
+                                                             hour == "2" ~ "Night",                       
+                                                             hour == "3" ~ "Night",                      
+                                                             hour == "4" ~ "Night",                      
+                                                             hour == "5" ~ "Night",                       
+                                                             hour == "6" ~ "Morning",               
+                                                             hour == "7" ~ "Morning",              
+                                                             hour == "8" ~ "Morning",                
+                                                             hour == "9" ~ "Morning",              
+                                                             hour == "10" ~ "Morning",               
+                                                             hour == "11" ~ "Morning",             
+                                                             hour == "12" ~ "Afternoon",                 
+                                                             hour == "13" ~ "Afternoon",                   
+                                                             hour == "14" ~ "Afternoon",                     
+                                                             hour == "15" ~ "Afternoon",                                
+                                                             hour == "16" ~ "Afternoon",                                  
+                                                             hour == "17" ~ "Afternoon",                                 
+                                                             hour == "18" ~ "Evening",                          
+                                                             hour == "19" ~ "Evening",                     
+                                                             hour == "20" ~ "Evening",                      
+                                                             hour == "21" ~ "Evening",                       
+                                                             hour == "22" ~ "Evening",                       
+                                                             hour == "23" ~ "Evening"))
  
 #clean the data
 
