@@ -163,7 +163,8 @@ crime_data %>%
 
 #-----------------------------------VISUALIZED DATA - CRIME PER YEAR & TIME OF DAY-----------------------------------
 ggplot(data = crime_data, #select dataframe
-       mapping = aes(x = year, color = time_of_day))+ #select x and y axes, add color for time of days
+       mapping = aes(x = year, color = time_of_day))+ #select x and y axes, add color for time of days. 
+                                                      #change "color = time_of_day" to "color =  one of(month, season, hour, etc...) to filter by different variables
        geom_line(stat = "count", size = 1.05)+ #count crimes per year, change line size
        ylim(0,60000)+ #limit y axis from 0-60,000
        labs(title = "Reported Crime Per Year, Time of day")+ #add title
